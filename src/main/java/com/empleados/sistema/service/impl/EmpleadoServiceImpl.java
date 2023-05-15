@@ -25,7 +25,7 @@ public class EmpleadoServiceImpl implements EmpleadoService {
 
 		try {
 			if(empleadoRepository.findAll().size() <= 5) {
-				empleadoRepository.save(empleado);				
+				empleadoRepository.save(empleado);
 			}else {
 				LogerUtil.logMessage("Metodo, En cosntruccion, por ahora solo permite insertar 5 Empleados");
 			}
