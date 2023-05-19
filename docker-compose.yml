@@ -15,5 +15,8 @@ services:
       - "5432:5432"
     environment:
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=1234
-      - POSTGRES_DB=CRUD-Empleados
+#      - POSTGRES_PASSWORD=1234
+#      - POSTGRES_DB=CRUD-Empleados
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=crud-empleados-387123:us-central1:crud-empleados
+      
